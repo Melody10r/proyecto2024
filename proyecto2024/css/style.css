@@ -1,0 +1,156 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffeef8; 
+    color: #333;
+}
+
+header {
+    background-color: #f4a6c0; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff69b4;
+}
+
+h1 {
+    margin: 0;
+}
+
+#productos {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+}
+
+.producto {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: inline-block;
+    height: auto;
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; 
+}
+
+.producto:hover {
+    transform: scale(1.05); 
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    margin: 0.5rem 0;
+    color: #d5006d; 
+}
+
+.producto p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.producto span {
+    font-weight: bold;
+    color: #ff69b4; 
+}
+
+main {
+flex: 1;
+padding: 20px;
+}
+
+.productos-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: transform 0.5s ease;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.form {
+    max-width:400px;
+    margin: auto;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #333;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; 
+        margin: 0.5rem 0;
+    }
+
+    #productos {
+        padding: 1rem;
+    }
+
+    .producto {
+        width: 90%; 
+    }
+}
+
