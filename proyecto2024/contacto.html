@@ -1,36 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-</head>
-<body>
-    <header> </header>
-    <main>
-        <section>
-            <h1>Si queres sumarte a este equipo no dudes en completar este formulario con tus datos y nos pondremos en contacto!</h1>
-            <h2>Contacto</h2>
-            <form class="form">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required>
-
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="dni">Dni:</label>
-                <input type="text" id="dni" name="dni" required>
-
-                <label for="localidad">Localidad:</label>
-                <input type="text" id="localidad" name="localidad" required>
-
-                <button type="submit">Enviar formulario</button>
-            </form>
-        </section>
-    </main>
-    
-</body>
+    <body>
+        <header> 
+            <h1>Tienda de belleza</h1> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="contacto">
+                <h1>Unite a nuestro equipo</h1>
+                <p>Si quieres ser revendedor/a, completa este formulario y nos pondremos en contacto contigo lo antes posible.</p>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dni">Dni:</label>
+                        <input type="text" id="dni" name="dni" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="localidad">Localidad:</label>
+                        <input type="text" id="localidad" name="localidad" required>
+                    </div>
+                    <br>
+                    <div>
+                        <button type="submit" >Enviar formulario</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Tienda de Belleza. Todos los derechos reservados.</p>
+        </footer>
+    </body>
 </html>

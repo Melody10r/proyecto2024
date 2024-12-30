@@ -3,136 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos de belleza</title>
+    <title>Página Principal</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Tienda de Belleza</h1>
         <nav>
-            <ul>
-                <li><a href="Inicio">Inicio</a></li>
-                <li><a href="Productos">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <section class="bienvenida">
+                <h2>Bienvenidos a la Tienda de Belleza</h2>
+                <br>
+            <ul class="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="https://wa.me/5491131678990" target="_blank" rel="noopener noreferrer">Contáctanos por WhatsApp</a></li>
             </ul>
+            </section>
         </nav>
     </header>
+    <br>
 
     <main>
-        <section id="productos">
-            <h2>Productos en Stock</h2>
+        <section class="infoNatura">
+                <h2>Sobre Natura</h2>
+            <article>
+                <p>Natura es una empresa brasileña que lidera la industria cosmética sostenible. Con más de 50 años de trayectoria, se dedica a crear productos de belleza con ingredientes naturales, respetando el medio ambiente y promoviendo el comercio justo.</p>
+                <p>En Argentina, Natura trabaja desde 1994, apoyando el empoderamiento de las mujeres a través de su red de consultoras y diversas iniciativas sociales.</p>
+            </article>
+            <br>
 
-            <div class="productos-wrapper">
-                <div class="producto">
-                    <img src="multimedia/humor libertad.jpg" alt="Producto 1">
-                    <h3>Humor Libertad</h3>
-                    <p>Fragancia unisex.</p>
-                    <span>$35.000</span>
-                </div>
-                <div class="producto">
-                    <img src="multimedia/humor transforma.jpg" alt="Producto 2">
-                    <h3>Humor Transforma</h3>
-                    <p>Fragancia Unisex.</p>
-                    <span>$35.000</span>
-                </div>
-                <div class="producto">
-                    <img src="multimedia/kit algodon.jpg" alt="Producto 3">
-                    <h3>Kit de algodon</h3>
-                    <p>Body splash + crema hidratante corporal.</p>
-                    <span>$17.000</span>
-                </div>
-                <div class="producto">
-                    <img src="multimedia/kit maracuyja.jpg" alt="Producto 4">
-                    <h3>Kit de maracuja</h3>
-                    <p>Nectar corporal + crema para manos + jabón.</p>
-                    <span>$19.000</span>
-                </div>
-                <div class="producto">
-                    <img src="multimedia/splash avellana y casis.jpg" alt="Producto 5">
-                    <h3>Avellana y casis</h3>
-                    <p>Body splash.</p>
-                    <span>$15.000</span>
-                </div>
-                <div class="producto">
-                    <img src="multimedia/crema chronos.jpg" alt="Producto 6">
-                    <h3>Serum Chronos</h3>
-                    <p>Reductor de bolsas y ojeras.</p>
-                    <span>$23.000</span>
-                </div>
-                <div class="producto">
-                    <img src="multimedia/Castaña.jpg" alt="Producto 7">
-                    <h3>Kit de castaña</h3>
-                    <p>Mini frescor + crema para manos + jabón liquido corporal.</p>
-                    <span>$25.000</span>
-                </div>
-                <div class="producto">
-                    <img src="multimedia/labial rojo.jpg" alt="Producto 8">
-                    <h3>Labial Faces</h3>
-                    <p>Tono Rojo.</p>
-                    <span>$6.000</span>
-                </div>
-                <div class="producto">
-                    <img src="multimedia/rimel (1).jpg" alt="Producto 9">
-                    <h3>Rimel Faces</h3>
-                    <p>A prueba de agua.</p>
-                    <span>$11.000</span>
-                </div>
+            <article>
+                <p>Explora productos que combinan naturaleza y tecnología para el cuidado personal.</p>
+                <br>
+                <a href="productos.html" class="explorar"> Explorar productos</a>
+            </article>
+            <br>
 
-                <div class="producto">
-                    <img src="multimedia/Beijo.jpg" alt="Producto 10">
-                    <h3> Beijo de humor</h3>
-                    <p>Fragnacia femenina.</p>
-                    <span>$37.000</span>
-                </div>
-
-                <div class="producto">
-                    <img src="multimedia/Urbe.jpg" alt="Producto 11">
-                    <h3>Kaiak urbe</h3>
-                    <p>Fragancia masculina.</p>
-                    <span>$37.000</span>
-                </div>
-                <div class="producto">
-                    <img src="multimedia/Conexao.jpg" alt="Producto 12">
-                    <h3>Conexao de humor</h3>
-                    <p>Fragancia masculina.</p>
-                    <span>$35.000</span>
-                </div>
-
-                <div class="producto">
-                    <img src="multimedia/Estelar.jpg" alt="Producto 13">
-                    <h3>Humor Estelar</h3>
-                    <p>Fragancia masculina.</p>
-                    <span>$35.000</span>
-                </div>
-
-                <div class="producto">
-                    <img src="multimedia/Festival.jpg" alt="Producto 14">
-                    <h3>Festival de humor</h3>
-                    <p>Fragancia femenina.</p>
-                    <span>$35.000</span>
-                </div>
-
-                <div class="producto">
-                    <img src="multimedia/Galaxia.jpg" alt="Producto 15">
-                    <h3>Humor Galaxia</h3>
-                    <p>Fragancia femenina.</p>
-                    <span>$35.000</span>
-                </div>
-            </div>
-
-
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            <article class="vendeNatura">
+                <h2>Quieres unirte a Natura</h2>
+                <p>Forma parte de una red de consultoras comprometidas con el cuidado personal y el bienestar social.</p>
+                <a href="contacto.html">Contáctanos</a>
+            </article>
         </section>
-
     </main>
 
     
     <footer>
         <p>&copy; 2024 Tienda de Belleza. Todos los derechos reservados.</p>
     </footer>
-
-    <script src="js/java.js"></script>
 </body>
 </html>

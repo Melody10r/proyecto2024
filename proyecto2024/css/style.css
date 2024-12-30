@@ -1,26 +1,49 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    height: 100%;
+/* Estilos Generales */
+* {
     margin: 0;
     padding: 0;
-    background-color: #ffeef8; 
-    color: #333;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #ff69b4;
+}
+
+a:hover {
+    color: #ff3385;
+}
+
+/* Encabezado */
 header {
-    background-color: #f4a6c0; 
-    padding: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
     text-align: center;
+}
+
+nav {
+    align-items:flex-start;
+    padding: 20px;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
     padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
+    gap: 1em;
 }
 
 nav ul li a {
@@ -116,11 +139,15 @@ button {
 }
 
 .form {
+    align-items: stretch;
+    background: #f9f9f9;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     max-width:400px;
     margin: auto;
     padding: 1rem;
-    background: #f9f9f9;
-    border-radius: 8px;
 }
 
 label {
@@ -128,18 +155,109 @@ label {
     margin-top: 1rem;
 }
 
-footer {
-    background-color: #333;
-    bottom: 0;
+.bienvenida {
+    max-width: 60%;
     color: white;
+}
+
+.bienvenida h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.bienvenida p {
+    font-size: 1rem;
+}
+
+.explorar {
+background-color: #ff69b4;
+color: white;
+padding: 10px 20px;
+border-radius: 25px;
+font-size: 1.1rem;
+text-decoration: none;
+transition: backgroundcolor 0.3s;
+}
+
+.explorar:hover { 
+background-color: #ff3385;
+}
+
+.navLinks {
+list-style: none;
+display: flex;
+margin: 0;
+padding: 0;
+gap: 20px;
+}
+
+.navLinks a {
+text-decoration: none;
+color: white;
+font-size: 1rem;
+font-weight: bold;
+transition: color 0.3s;
+}
+
+.navLinks a:hover {
+color: #ff69b4;
+}
+
+.infoNatura{
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-top: 30px;
+    box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.infoNatura h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.infoNatura p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.vendeNatura {
     text-align: center;
-    padding: 1rem;
-    position: relative;
-    width: 100%;
+    padding: 50px 20px;
+    margin-top: 30px;
+}
+
+.vendeNatura h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.vendeNatura p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.vendeNatura a {
+    background-color: white;
+    color: #ff69b4;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.vendeNatura a:hover {
+    background-color: #d5006d;
+    color: white;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     nav ul li {
         display: block; 
         margin: 0.5rem 0;
@@ -152,5 +270,149 @@ footer {
     .producto {
         width: 90%; 
     }
+
+    .navLinks {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .bienvenida {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color:#f4b6c2;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0,3s;
+}
+
+nav ul li a:hover {
+    color: #fddde6;
+}
+
+main {
+    padding: 20px;
+}
+
+.contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #d5006d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+}
+
+.contacto h1 {
+    text-align: center;
+    color:#ff6589
+}
+
+.contacto p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #ff6589;
+    outline: none;
+    box-shadow: 0 0 4 rgba(225, 101, 137, 0.5);
+}
+
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #f4b6c2;
+    color: white;
+    margin-top: 20px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.imagenes img {
+    max-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+#carrito {
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#button {
+    align-self: flex-end;
+    background-color: #ff6589;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#button:hover {
+    background-color: #d5006d;
+}
+
+#total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px;
+    text-align: right;
+}
